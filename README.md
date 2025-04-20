@@ -28,9 +28,3 @@ Ensure you have the following installed on your machine:
 - Node.js (v16 or higher)
 - MongoDB Atlas account (for the backend)
 - Git (for version control)
-
-### Frontend Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/medsafe.git
