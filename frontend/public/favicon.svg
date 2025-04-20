@@ -1,0 +1,26 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="150" cy="100" r="80" fill="#f0f9ff" stroke="#0369a1" stroke-width="4"/>
+  
+  <!-- Cross Symbol -->
+  <rect x="142" y="50" width="16" height="100" rx="5" fill="#0369a1"/>
+  <rect x="100" y="92" width="100" height="16" rx="5" fill="#0369a1"/>
+  
+  <!-- Medicine Bottle -->
+  <path d="M165,135 L190,135 C195,135 200,140 200,145 L200,175 C200,180 195,185 190,185 L165,185 C160,185 155,180 155,175 L155,145 C155,140 160,135 165,135 Z" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  <rect x="165" y="125" width="25" height="10" rx="2" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  
+  <!-- Calendar/Timer Elements -->
+  <rect x="100" y="135" width="40" height="40" rx="5" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  <rect x="105" y="140" width="30" height="10" rx="2" fill="white"/>
+  <circle cx="110" cy="160" r="3" fill="white"/>
+  <circle cx="120" cy="160" r="3" fill="white"/>
+  <circle cx="130" cy="160" r="3" fill="white"/>
+  <circle cx="110" cy="170" r="3" fill="white"/>
+  <circle cx="120" cy="170" r="3" fill="white"/>
+  <path d="M130,170 L130,170" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Clock Hand -->
+  <line x1="120" y1="160" x2="135" y2="150" stroke="#ff4d4d" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="160" r="2" fill="#ff4d4d"/>
+</svg>

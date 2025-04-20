@@ -1,0 +1,8 @@
+/* for all the pages */
+.page{
+    width: fit-content;
+    margin:20vw auto;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: wavy;
+}

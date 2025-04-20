@@ -1,0 +1,25 @@
+.stats-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .dark-mode .stats-card {
+    background: var(--card-light);
+  }
+  
+  .stats-card h4 {
+    margin-bottom: 10px;
+    color: var(--text-medium);
+  }
+  
+  .stats-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

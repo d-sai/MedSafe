@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.landing-container {
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    /* Keeps navbar above content */
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #004494;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.cta-button {
+    background: #ff5722;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Features */
+.features {
+    padding: 40px;
+}
+
+/* ✅ Add vertical space between heading and feature grid */
+section>h3 {
+    margin-bottom: 20px;
+    /* Adds spacing below the heading */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    /* Increases vertical and horizontal spacing between feature cards */
+}
+
+.feature-card {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 40px;
+    background: #f1f1f1;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Testimonial */
+.testimonials {
+    padding: 40px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+    padding: 15px;
+    background: #343a40;
+    color: white;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+
+    .steps {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .step {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        /* Pushes menu below navbar */
+        right: 20px;
+        width: 180px;
+        /* Adjust width */
+        border-radius: 5px;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* When menu is open, display it properly */
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* ✅ Pushes page content down when menu is open */
+    body.menu-open {
+        padding-top: 100px;
+        /* Adjust this value to move the content */
+    }
+}
+
+
+/* ---------------------------------------------------------- */
+

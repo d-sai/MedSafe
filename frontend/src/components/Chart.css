@@ -1,0 +1,14 @@
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: var(--card-shadow);
+    transition: background-color var(--transition-speed);
+  }
+  
+  .dark-mode .chart-box {
+    background: var(--card-light);
+  }
+  

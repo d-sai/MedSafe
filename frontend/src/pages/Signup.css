@@ -1,0 +1,202 @@
+/* Container Layout */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height: 100vh to allow content to grow */
+    padding: 20px;
+    background: var(--bg-light);
+    transition: background-color var(--transition-speed);
+    gap: 40px;
+    flex-wrap: wrap; /* Allow stacking on smaller screens */
+    overflow-y: auto; /* Fix vertical overflow */
+}
+
+/* Info Section (Left) */
+.info-section {
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+}
+
+/* ... your original styles continue unchanged ... */
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.benefits,
+.customer-reviews {
+    margin-top: 20px;
+}
+
+.benefits h3,
+.customer-reviews h3 {
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+}
+
+.customer-reviews p {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    margin-bottom: 10px;
+}
+
+/* Signup Form Section (Right) */
+.signup-form-section {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+    overflow-y: auto; /* Prevent form overflow */
+}
+
+/* Dark mode */
+.dark-mode .signup-form-section {
+    background: var(--card-light);
+}
+
+/* ... keep the rest of your styles untouched ... */
+
+.signup-form-section h2 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    transition: color var(--transition-speed);
+}
+
+.dark-mode .signup-form-section h2 {
+    color: var(--text-dark);
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+    transition: color var(--transition-speed);
+}
+
+.dark-mode .input-group label {
+    color: var(--text-dark);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--text-medium);
+    border-radius: 5px;
+    background: var(--bg-medium);
+    color: var(--text-dark);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.dark-mode .input-group input {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border: 1px solid var(--text-medium);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: var(--primary-dark);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.signup-btn:hover {
+    background: var(--primary-darker);
+    transform: scale(1.05);
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.login-link a:hover {
+    color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .signup-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 10px;
+    }
+
+    .signup-form-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup-form-section {
+        padding: 25px;
+    }
+
+    .input-group input {
+        padding: 10px;
+    }
+
+    .signup-btn {
+        padding: 10px;
+    }
+}

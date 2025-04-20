@@ -1,0 +1,26 @@
+.expiry-alert {
+    margin-top: 50px;
+    background: var(--card-light);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .dark-mode .expiry-alert {
+    background: var(--card-dark);
+  }
+  
+  .expiry-alert h3 {
+    margin-bottom: 15px;
+  }
+  
+  .expiry-alert ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .expiry-alert li {
+    margin-bottom: 8px;
+    color: var(--text-medium);
+  }
+  

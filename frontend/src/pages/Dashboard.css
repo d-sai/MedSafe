@@ -1,0 +1,40 @@
+.dashboard-container {
+    padding: 40px;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    transition: background-color var(--transition-speed);
+  }
+  
+  .dark-mode .dashboard-container {
+    background: var(--bg-dark);
+    color: var(--text-light);
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .charts-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .charts-section {
+      flex-direction: column;
+    }
+  }
+  
+  a{
+    text-decoration: none;
+  }

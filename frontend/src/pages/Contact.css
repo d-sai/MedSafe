@@ -1,0 +1,110 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 40px;
+    background: var(--bg-light);
+    transition: background-color var(--transition-speed);
+  }
+  
+  /* Info Section */
+  .contact-info {
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    color: var(--text-medium);
+    margin-bottom: 20px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    color: var(--text-dark);
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    max-width: 500px;
+    width: 100%;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .dark-mode .contact-form {
+    background: var(--card-light);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--text-medium);
+    background: var(--bg-medium);
+    color: var(--text-dark);
+    resize: vertical;
+  }
+  
+  .dark-mode .input-group input,
+  .dark-mode .input-group textarea {
+    background: var(--bg-light);
+    color: var(--text-dark);
+  }
+  
+  /* Button */
+  .contact-btn {
+    background: var(--primary-dark);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+  }
+  
+  .contact-btn:hover {
+    background: var(--primary-darker);
+    transform: scale(1.03);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-form, .contact-info {
+      max-width: 100%;
+    }
+  }
+  
